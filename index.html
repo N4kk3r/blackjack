@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- importamos bootstrap por CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>BlackJack</title>
+</head>
+<body>
+    <header class="titulo">
+        BlackJack
+    </header>
+
+    <section class="row mt-2">
+        <article class="col text-center">
+            <!-- las clases de estos botones son para bootstrap, https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp aqui se ven muchas de ellas entre las que estan los botones que uso  -->
+          <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+          <button id="btnPedir" class="btn btn-primary">Pedir Carta</button>
+          <button id="btnDetener" class="btn btn-primary">Detener</button>
+        </article>
+        
+        
+    </section>
+    <section class="row container">
+        <article class="col">
+
+            <h1>Jugador 1 - <small id="playerpoints">0</small></h1>
+
+            <figure id="jugador-cartas">
+                <!-- <img class="carta" src="./assets/cartas/10C.png" alt="">                -->
+
+
+            </figure>
+        </article>
+    </section>
+    
+    <section class="row container mt-2">
+        <article class="col">
+
+            <h1>Banca - <small id="bankpoints">0</small></h1>
+
+            <figure id="banca-cartas">
+                <!-- <img class="carta" src="./assets/cartas/4H.png" alt=""> -->
+                
+                
+            </figure>
+        </article>
+    </section>
+
+
+    <!-- https://underscorejs.org/ aqui se ven todos los metodos que tenemos gracias a underscore solo vi un par de ellos pero hay para arrays,objetos,colecciones (que aun no se usarlas). -->
+    <!-- me daba un error que me provoco dolor de cabeza, no me reconocia el metodo _.shuffle decia que no existia, el problema era que hay muchas versiones en la pagina, una ESM otra UMD y buscando (no lo entiendo muy bien aun) decian de probar las diferentes a ver cual era compatible con nuestra version, yo lo que hare sera usar esta que descargue para otras cosas si es que la necesito -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/underscore@1.12.0/underscore-min.js"></script> -->
+    <script src="./assets/js/underscore-min.js"></script>
+    <script src="./assets/js/juego.js"></script>
+</body>
+</html>

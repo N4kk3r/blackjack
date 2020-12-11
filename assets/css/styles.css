@@ -1,0 +1,27 @@
+
+
+html, body{
+    margin: 0px;
+    background-color: #2f4f30;
+    color: white;
+}
+
+.titulo{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+
+.carta{
+    position: relative;
+    width: 12rem;
+    left: 7rem;
+    /* el margin-left: en negativo hace que se suba una carta encima de la otra */
+    margin-left: -6rem;
+}
+
+#banca-cartas, #jugador-cartas{
+    height: 22rem;
+}
